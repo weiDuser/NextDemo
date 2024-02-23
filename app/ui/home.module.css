@@ -1,0 +1,29 @@
+.shape {
+  height: 0;
+  width: 0;
+  border-bottom: 30px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.banner_textscroll {
+  max-width: 300px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+@keyframes srcolltext {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.banner_textscroll > div {
+  white-space: nowrap;
+  width: 300px;
+  animation: 10s srcolltext linear infinite;
+  color: white;
+}
